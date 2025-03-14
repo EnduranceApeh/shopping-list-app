@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+h4 {
+    
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 1.3rem;
+}
+.container {
+    background: #ffffff;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.intro{
+    margin: 0 auto;
+}
+.cartImg {
+    width: 350px;
+    height: 400px;
+    margin-bottom: 1px;
+}
+.js-message{
+    transition: ease-in-out;
+    color: #E53935;
+}
+.hide-message{
+    display: none;
+}
+input[type="text"] {
+    background-color: #E0E0E0;
+    width: 70%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.add-to-cart {
+    background-color: #000;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+input[type="checkbox"] {
+    width: 30px;
+    height: 20px;
+}
+.add-to-cart:active {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    text-align: left;
+
+}
+
+ul li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn{
+    border: none;
+    color: red;
+}
+
+@media (min-width: 768px) { /* Tablet view */
+    .container {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .cartImg {
+        width: 300px;
+        height: auto;
+    }
+
+    input[type="text"] {
+        width: 60%;
+        padding: 15px;
+    }
+
+    .add-to-cart {
+        width: 60%;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1024px) { /* Desktop view */
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 50%;
+        max-width: 700px;
+        padding: 30px;
+    }
+
+    .cartImg {
+        width: 280px;
+        height: auto;
+    }
+
+    input[type="text"] {
+        width: 50%;
+    }
+
+    .add-to-cart {
+        width: 50%;
+    }
+
+    ul li {
+        font-size: 1.1rem;
+    }
+}
