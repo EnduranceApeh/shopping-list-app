@@ -65,7 +65,7 @@ input[type="text"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
 }
 input[type="checkbox"] {
     width: 30px;
@@ -73,6 +73,9 @@ input[type="checkbox"] {
 }
 .add-to-cart:active {
     background-color: #0056b3;
+}
+.shopping{
+    margin-top: 0;
 }
 
 ul {
@@ -116,7 +119,11 @@ ul li {
         width: 60%;
         padding: 15px;
     }
-
+    input[type="text"]:focus {
+        width: inherit;
+        font-size: inherit;
+        max-width: inherit;
+     }
     .add-to-cart {
         width: 60%;
         padding: 15px;
